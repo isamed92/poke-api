@@ -18,13 +18,15 @@ npm i -g @nestjs/cli
 docker-compose up -d
 ```
 
-5. reconstruir la base de datos con los datos de prueba
+5. modificar el archivo .env.example y renombrarlo a .env. Este archivo contiene las variables de entorno necesarias para la aplicación, completar con los valores correspondientes.
+
+6. ejecute `npm run start:dev`
+
+7. reconstruir la base de datos con los datos de prueba
 
 ```
 GET localhost:3000/api/v2/seed
 ```
-
-5. ejecute `npm run start:dev`
 
 ## Stack usado
 
