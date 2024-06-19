@@ -32,3 +32,22 @@ GET localhost:3000/api/v2/seed
 
 - NestJS
 - MongoDB
+
+## Producción
+
+1. crear el archivo .env.prod con las variables de entorno correspondientes
+
+2. llenar las variables de entorno en el archivo .env.prod
+
+3. construir la imagen de docker
+
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+
+```
+
+4. levantar la imagen de docker
+
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up -d
+```
